@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Width & height */
+/* Custom layout size */
+.container__content .breadcrumbs__path {
+  font-size: 14px;
+  color: #888;
+}
+.container__content .contact__map {
+  margin-bottom: 20px;
+}
+.container__content .contact__map iframe {
+  width: 100%;
+  border: none;
+  height: 500px;
+}
+.container__content .contact__details {
+  display: flex;
+  gap: 20px;
+}
+.container__content .contact__info-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 14px;
+}
+.container__content .contact__info-list, .container__content .contact__info__form-title {
+  list-style: none;
+  padding: 20px;
+}
+.container__content .contact__info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.container__content .contact__info-item .contact__info-icon {
+  font-size: 22px;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e36a00;
+  color: #fff;
+  padding: 14px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+.container__content .contact__info-item .contact__info-icon:hover {
+  opacity: 0.8;
+}
+.container__content .contact__info-item .contact__text b {
+  margin-bottom: 10px; /* Tạo khoảng cách giữa b và nội dung sau */
+}
+.container__content .contact__info-item .contact__text br {
+  margin-bottom: 10px; /* Tạo khoảng cách dưới mỗi thẻ <br> */
+  display: block; /* Đảm bảo margin có hiệu lực */
+}
+.container__content .contact__form-title {
+  padding: 14px;
+}
+.container__content .contact__form-description {
+  font-size: 16px;
+  color: #666;
+  padding: 14px;
+}
+.container__content .contact__form-group {
+  margin-bottom: 15px;
+}
+.container__content .contact__form-input, .container__content .contact__form-textarea {
+  width: 100%;
+  padding: 8px 20px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  opacity: 0.8;
+}
+.container__content .contact__form-button {
+  padding: 10px 20px;
+  background-color: #e36a00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.container__content .contact__form-note {
+  font-size: 12px;
+  color: #aaa;
+}
+.container__content .contact .dflex {
+  display: flex;
+  gap: 10px;
+}
+.container__content .footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  font-size: 14px;
+  color: #333;
+}
+.container__content .footer__container {
+  max-width: 1600px;
+}
+.container__content .footer__columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container__content .footer__column {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 200px;
+}
+.container__content .footer__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container__content .footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container__content .footer__list li {
+  margin-bottom: 5px;
+}
+.container__content .footer__list li a {
+  color: #333;
+  text-decoration: none;
+}
+.container__content .footer__list li a:hover {
+  text-decoration: underline;
+}
+.container__content .footer__bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+.container__content .footer__legal {
+  margin: 0;
+}
+.container__content .footer__image .footer__column img {
+  width: 180px;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
