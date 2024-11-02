@@ -92,7 +92,7 @@ $gutter: 48px;
 
         &__details {
             display: flex;
-            gap: 20px;
+            gap: 24px;
         }
 
         &__info {
@@ -191,29 +191,31 @@ $gutter: 48px;
     }
     // footer
     .footer {
-        background-color: #f9f9f9;
-        padding: 20px;
-        font-size: 14px;
-        color: #333;
-    
-        &__container { 
-            max-width: 1600px;
+        &__container {
+            background-color: $color-box-dark;
+            padding: 20px;
+            font-size: 14px;
+            color: #333;
         }
     
         &__columns {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             gap: 20px;
         }
     
         &__column {
-            flex: 1 1 calc(25% - 20px); // Chia đều thành 4 cột, mỗi cột chiếm 25% chiều rộng của container
-            min-width: 200px; // Đảm bảo mỗi cột tối thiểu 200px để tránh bị vỡ bố cục
+            flex: 1 4 calc(25% - 20px); // Chia đều thành 4 cột
+            min-width: 200px;
         }
     
         &__title {
+            font-size: $fs-h5;
             font-weight: bold;
             margin-bottom: 10px;
+        }
+        &__description {
+            font-size: $fs-body;
         }
     
         &__list {
@@ -225,6 +227,7 @@ $gutter: 48px;
                 margin-bottom: 5px;
     
                 a {
+                    font-size: $fs-body;
                     color: #333;
                     text-decoration: none;
     
@@ -236,7 +239,6 @@ $gutter: 48px;
         }
     
         &__bottom {
-            
             margin-top: 20px;
             text-align: center;
             font-size: 12px;
@@ -244,16 +246,24 @@ $gutter: 48px;
         }
     
         &__legal {
-            margin: 0; 
+            margin: 0;
         }
+    
         &__image {
-            .footer__column img {
+            margin-top: 20px;
+            img {
                 width: 180px;
-                height: auto; 
+                height: auto;
             }
         }
-        
+    
+        &__border {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
     }
+    
     
     
     
